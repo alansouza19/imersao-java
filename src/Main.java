@@ -3,7 +3,6 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -24,6 +23,7 @@ public class Main {
         List<Map<String, String>> listFilm = parse.parse(body);
         for (Map<String, String> filme : listFilm) {
 
+        //exibir e manipular os dados
             System.out.println(filme.get("title"));
             System.out.println(filme.get("image"));
             System.out.println(filme.get("imDbRating"));
