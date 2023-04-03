@@ -22,6 +22,8 @@ public class Main {
         //extrair só os dados que nos interessam
         var parse = new JsonParse();
         List<Map<String, String>> listFilm = parse.parse(body);
+
+        //exibir e manipular os dados
         for (Map<String, String> filme : listFilm) {
 
             System.out.println(filme.get("title"));
